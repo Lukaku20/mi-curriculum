@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <script>
+        function mostrarInformacionPersonal() {
+          // Define la información personal que deseas mostrar
+          var informacion = {
+            email: "lucascarballo8819@gmail.com",
+            telefono: "+54 261 2051722",
+            localidad: "Mendoza, Argentina"
+          };
+        
+          // Crea el contenido de la ventana emergente con la información
+          var contenidoVentana = `
+            
+            <p>Email: ${informacion.email}</p>
+            <p>Teléfono: ${informacion.telefono}</p>
+            <p>Localidad: ${informacion.localidad}</p>
+          `;
+        
+            // Abre la ventana emergente
+            var ventanaEmergente = window.open("about:blank", "InformacionPersonal", "width=400,height=300");
+          
+            // Escribe el contenido en la ventana emergente
+            ventanaEmergente.document.write(contenidoVentana);
+        }
+        </script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="https://github.com/Lukaku20"> Mi GitHub</a> <a href="https://www.linkedin.com/in/lucas-carballo-97b02a175/"> Mi LinkedIn</a> <a href="#" id="link-info" onclick="mostrarInformacionPersonal()">Información Personal</a>
+
+            <!-- Vinculamos el archivo JavaScript externo (opcional si utilizas archivo externo) -->
+            <script src="/informacion_personal.js"></script>
+        </nav>
+        <header>
+            <div class="title-container">
+                <h1 class="title-highlighted">LUCAS MARTÍN CARBALLO</h1>
+            </div>
+            
+                <option class= "highlight-text" value="programador">► Programador</option>
+                <option value="docente">► Profesor de Historia</option>
+            
+        </header>
+            
+        <div class="main-content">
+            <div class="image-container">
+            <img src="fotoDePerfil.jpg" alt="La foto de Lucas" class="image"> </div>
+            <p class="highlight-text">         
+                Desarrollador Full Stack Junior | Web | React | Nodejs | Javascript | Spring | HTML | CSS | Docente | Profesor | Fullstack Developer</p>
+        </div>
+        
+    <div class="skill">
+
+        <h2 class="title">EXPERIENCIA LABORAL</h2>
+        <h3 class="title">2023 Desarrollador Full Stack Freelance</h3>
+        <p class="main-text"> 
+            Desarrollos de sitios web.
+            </p>
+    </div>
+    <div class="skill">
+        <h2 class="title">FORMACIÓN ACADÉMICA</h2>
+
+        <h3 class="title">  2022 - EGG Cooperación Programador Web/Desarrollador Full Stack</h3>
+        <p class="main-text"> Curso intensivo de programación que abarca desde los fundamentos de la programación hasta la creación de aplicaciones web dinámicas.
+          Desarrollo de habilidades en tecnologías web como HTML, CSS, Spring,  JavaScript, Node.js y React.</p>
+        <h3 class="title">   2010 - 2017 - Universidad Nacional de Cuyo Profesor de Grado Universitario en Historia</h3>
+         <p class="main-text"> Licenciatura en Historia con formación docente.
+            Conocimientos en disciplinas como la Historia Argentina, la Historia Mundial y las Ciencias Sociales.
+         Formación pedagógica para la enseñanza en nivel medio y superior.</p>
+
+</div>
+    <div class="skill">
+        <h2 class="title">CURSOS Y CERTIFICACIONES</h2>
+
+        <h3 class="title"> 2023 - How to use Chat GPT - Deep Learning. IA</h3>
+            <p class="main-text">
+                Curso sobre prácticas de prompt usando Chat gpt soportado en Jupyter. 
+               A través de Pyhton, conectarse con la API de OpenAi, combinando código y lenguaje Markdown para explicar.
+                Uso el entorno de trabajo Jupiter Notebook.
+                Introducción al lenguaje Python y uso de librerías.</p>
+        <h3 class="title">2021 - IES Santander Foundation Mejores Prácticas en Enseñanza Online y Nuevo Rol del Educador</h3>
+            <p class="main-text">Curso de formación en educación online, que incluyó prácticas innovadoras y mejores prácticas en la enseñanza en línea.
+                Desarrollo de habilidades en el uso de herramientas tecnológicas y pedagógicas para la enseñanza virtual.</p>
+        <h4 class="title">2020 - Gobierno de Mendoza Competencias Digitales en el Aula Hoy - Tramo 1: Escenarios Virtuales Colaborativos</h4>
+            <p class="main-text">Curso de formación en el uso de herramientas tecnológicas para la enseñanza en línea y el trabajo colaborativo.
+                Desarrollo de habilidades en el uso de plataformas educativas, herramientas de colaboración y la creación de recursos educativos digitales.
+    </p>    </div>
+
+    
+    <div class="skill">
+        <h2 class="title">HABILIDADES Y COMPETENCIAS</h2>
+        
+        <div >
+            <h3 class="title">Competencias en programación</h3>  
+            <p class="main-text">Desarrollo web: habilidades en HTML, CSS, JavaScript. 
+                Conocimientos avanzados en lenguajes de programación como Java y Python. 
+                Uso de entornos de trabajo como Netbeans Apache, Jupyter Notebook y Visual Studio Code.
+                Spring boot-security con Maven. Administrar y controlar las diferentes versiones del código fuente 
+                utilizando sistemas de control de versiones como Git. 
+                Conexiones con Base de Datos en MySQL, con Java usando JDBC y JPA. 
+                Introducción en metodologías ágiles de desarrollo de software como Scrum y Kanban.</p>
+        </div>
+        <div> 
+            <h3 class="title">Habilidades generales</h3>
+            <p class="main-text"> 
+             
+             Excelentes habilidades de comunicación y trabajo en equipo.
+             Capacidad para trabajar en entornos dinámicos y cambiantes.
+             Experiencia en la enseñanza y formación de jóvenes y adultos.
+             Conocimientos en disciplinas como la Historia Argentina, la  Historia Mundial y las Ciencias Sociales.
+             Habilidad para planificar y desarrollar materiales de enseñanza y autoaprendizaje.
+             Uso de herramientas de ofimática como Word, Excel y Power Point.
+             </p>
+        </div>
+        <div > <h3 class="title ">Language skills</h3>
+            <p class="main-text">Proficient in reading and comprehending English texts, with basic conversational skills.
+            </p></div>
+          
+    </div>
+
+
+
+    <footer>
+        <a href="https://github.com/Lukaku20"> Mi GitHub</a> <a href="https://www.linkedin.com/in/lucas-carballo-97b02a175/"> Mi LinkedIn</a> <a href="">Información personal</a>
+        <p class="quote">"La educación es el arma más poderosa que puedes usar para cambiar el mundo." - Nelson Mandela</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 32px;
+    color: #000;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.title:hover {
+    color: #ff5500;
+}
+
+
+.main-content {
+    padding: 20px;
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto;
+    max-height: 500px;
+
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+/*Estilo para la imagen 
+*/
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    animation: forwards;
+}
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces como botones */
+nav a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff; /* Texto blanco */
+    background-color: #ff5500; /* Fondo naranja */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+nav a:hover {
+    background-color: #ff7700; /* Fondo naranja más claro */
+    transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces como botones */
+nav option {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff; /* Texto blanco */
+    background-color: #ff5500; /* Fondo naranja */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el cursor sobre las opciones */
+nav option:hover {
+    background-color: #ff7700; /* Fondo naranja más claro */
+    transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ocultar el contenido que se desborda */
+    background-color: #f9f9f9;
+}
+
+.image {
+    width: 300px; /* Tamaño de la imagen */
+    height: 300px; /* Tamaño de la imagen */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideImage 13s linear infinite; /* Agregar la animación a la imagen */
+}
+
+/* Definir la animación */
+@keyframes slideImage {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(calc(100% - 150px)); /* Posición final (ancho de la pantalla - ancho de la imagen) */
+    }
+}
+/* Estilos para el texto destacado */
+.highlight-text {
+    background-color: #ff5500; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
+    padding: 5px 10px;
+
+
+
+
+
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold;
+
+}
+/* Estilos para el pie de página */
+footer {
+    display: inline-block;
+    height: 10px;
+    width: 96%;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 5px;
+    font-style: bold;
+    color: #fff; /* Texto blanco */
+    background-color: #ff5500; /* Fondo naranja */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s;
+}
+footer a{
+    color: #ccc;
+ }
+footer a:hover{
+    color: purple;
+}
+
+/* Estilos para el texto principal del contenido */
+.main-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #f9f9f9;
+}
+/* Estilos para el texto de cita */
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Estilos para texto en tamaño reducido */
+.small-text {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Clase para el contenedor flexible */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Ocupar el espacio eficientemente */
+}
+
+/* Estilos para los elementos dentro del contenedor flexible */
+.flex-item {
+    flex: 1; /* Hace que los elementos ocupen el mismo espacio disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Estilos para el contenedor de habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve a los elementos en filas nuevas cuando el espacio es insuficiente */
+    /*justify-content: space-between; /* Espaciado uniforme entre habilidades */
+    margin: -10px; /* Para compensar el margen individual de cada habilidad */
+}
+
+/* Estilos para cada habilidad */
+.skill {
+    flex: 0 0 calc(33.33% - 20px); /* Tamaño del 33.33% del ancho disponible (menos el espacio entre habilidades) */
+    padding: 10px;
+    border: 1px solid transparent; /* Bordes transparentes */
+    border-radius: 5px;
+    margin: 10px;
+    min-width: 200px; /* Ancho mínimo para que no se vuelvan demasiado pequeños */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el texto de habilidades */
+.skill h3 {
+    margin-top: 0; /* Eliminar el margen superior de los títulos */
+}
+
+/* Estilos para el contenido de habilidades */
+.skill p {
+    margin-bottom: 0; /* Eliminar el margen inferior de los párrafos */
+}
+
+.title-highlighted{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+
+
+}
+
