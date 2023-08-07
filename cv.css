@@ -29,7 +29,7 @@ header {
     text-align: justify;
     max-width: 50%;
     margin: 0 auto;
-    max-height: 500px;
+    max-height: px;
 
 }
 
@@ -107,8 +107,9 @@ nav option:hover {
 .image-container {
     text-align: center;
     padding: 20px;
-    overflow: hidden; /* Ocultar el contenido que se desborda */
+    /* Ocultar el contenido que se desborda */
     background-color: #f9f9f9;
+    display: flex;
 }
 
 .image {
