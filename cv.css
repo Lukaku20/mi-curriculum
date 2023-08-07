@@ -12,7 +12,7 @@ header {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 16px;
     color: #000;
     transition: color 0.3s;
     cursor: pointer;
@@ -25,9 +25,9 @@ header {
 
 
 .main-content {
-    padding: 20px;
+    padding: 0px;
     text-align: justify;
-    max-width: 60%;
+    max-width: 50%;
     margin: 0 auto;
     max-height: 500px;
 
@@ -43,8 +43,8 @@ p {
 /*Estilo para la imagen 
 */
 .image {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
@@ -133,11 +133,6 @@ nav option:hover {
     background-color: #ff5500; /* Fondo naranja */
     color: #fff; /* Texto blanco */
     padding: 5px 10px;
-
-
-
-
-
     border-radius: 5px; /* Bordes redondeados */
     font-weight: bold;
 
