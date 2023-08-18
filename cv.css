@@ -27,19 +27,20 @@ header {
 .alerta {
     background: #fff6bf url(images/error.gif) center no-repeat;
     background-position: 15px 50%; /* x-pos y-pos */
-    text-align: left;
+    text-align: center;
     padding: 5px 20px 5px 45px;
     border-top: 2px solid #ffd324;
     border-bottom: 2px solid #ffd324;
     color:#000000;
+
     }
 
 .main-content {
     padding: 0px;
     text-align: justify;
-    max-width: 50%;
+    
     margin: 0 auto;
-    max-height: 500px;
+    max-height: 100%;
 
 }
 
@@ -53,12 +54,20 @@ p {
 /*Estilo para la imagen 
 */
 .image {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    ali
+    /*transition: transform 0.3s;*/
 }
+.centrado{
+
+    margin-left: auto; 
+    
+    margin-right: auto;
+    
+    }
 
 .image:hover {
     transform: scale(1.1);
@@ -115,6 +124,7 @@ nav option:hover {
 }
 
 .image-container {
+    align-content: center;
     text-align: center;
     padding: 20px;
     /* Ocultar el contenido que se desborda */
@@ -127,7 +137,8 @@ nav option:hover {
     height: 300px; /* Tamaño de la imagen */
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    animation: slideImage 13s linear infinite; /* Agregar la animación a la imagen */
+    image-rendering: optimizeQuality;
+    /*animation: slideImage 13s linear infinite; /* Agregar la animación a la imagen */
 }
 
 /* Definir la animación */
@@ -146,6 +157,7 @@ nav option:hover {
     padding: 5px 10px;
     border-radius: 5px; /* Bordes redondeados */
     font-weight: bold;
+    text-align: center;
 
 }
 /* Estilos para el pie de página */
